@@ -11,4 +11,4 @@ i. character count ii.character stuffing and iii. bit stuffing
 
 ### Output
 
-![output](co.png)
+![output](cn1_charcount.png)
