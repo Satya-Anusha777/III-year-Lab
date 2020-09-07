@@ -27,7 +27,7 @@ Use character stuffing; within the frame, replace every occurrence of DLE with t
 
 #### Bit Stuffing:
 
-![output](bit_stuffing.png)
+![output](bitstuffing.png)
 
 #### Character Stuffing:
 
