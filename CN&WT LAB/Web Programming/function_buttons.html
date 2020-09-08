@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>javascript</title>
+	</head>
+	<body>
+        <button onclick="random_fn()">Random Function</button>
+	<button onmouseover="highestElement()">Highest Number</button>
+		<button onmouseout="asscending()">Ascending order</button>
+		<button onclick = "desc()">Descending order</button>
+		<button onclick="displayDate()">Display Date</button>
+        <button onclick="squareNumber(4)">Number square</button><br><br>
+        <button onclick="mapping()">Using Map</button>
+        <button onclick="Filter()">Using filter</button>
+        <button onclick="Reduce()">Using reduce</button>
+        <button onclick="Every()">Using every</button>
+        <button onclick="Some()">Using some</button>
+        <button onclick="Find()">Using find</button>
+       
+
+<script>
+            var ages = [360,90,180,45,0]
+            var ele = ages.forEach(fn)
+			function fn(ages) {
+				ages = ages+2
+				console.log(ages)
+			}
+			function displayDate() {
+			//document.getElementById("demo").innerHTML = Date()
+			console.log(Date())
+		}
+        function squareNumber(x) {
+			console.log(x*x)
+		}
+           function mapping(){
+			var ele1 = ages.map(myFunction)
+			console.log(ele1)
+           }
+			function myFunction(value) {
+				return value+2
+			}
+            function Filter(){
+			var ele2 = ages.filter(myFunction1)
+			console.log(ele2)}
+			function myFunction1(value){
+				return value > 60
+			}
+			function Reduce(){
+			var ele3 = ages.reduce(myFunction2)
+			console.log(ele3)}
+			function myFunction2(total , value){
+				return total + value
+			}
+			function Every() {
+			var everyele = ages.every(myFn)
+			console.log(everyele)}
+            function Some() {
+			var someele = ages.some(myFn)
+			console.log(someele)
+}			function myFn(value) {
+		          return value > 60		
+			}
+            function Find() {
+			console.log(ages.find(myFn))}
+            function asscending(){
+			var sorted_arr = ages.sort(function(a, b) {return a-b})
+			console.log(sorted_arr)
+   }
+   function random_fn() {
+		console.log(ages.sort(function(a,b){return 0.5 - Math.random()}))
+		}
+   function desc(){
+			var sorted_arr = ages.sort(function(a, b) {return b-a})
+			console.log(sorted_arr)
+   }
+		console.log("Asscending Elements " + asscending())
+		console.log("Descending Elements "+ desc())	
+		console.log("Highest Element "+highestElement())
+       // console.log("Squarenumber is " + squareNumber(8))
+		
+		function highestElement() {
+			var sorted_arr =ages.sort(function(a, b) {return a-b})
+			var highest = sorted_arr[sorted_arr.length-1]
+			console.log(highest)
+		}
+        </script>
+        </body>
+        </html>
