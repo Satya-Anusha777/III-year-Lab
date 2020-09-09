@@ -34,4 +34,4 @@ Write a program to compute CRC code for the polynomials CRC-12,CRC-16 and CRC CC
  
 ### Output
 
-![output](crc.png)
+![output](CRC.png)
