@@ -9,7 +9,7 @@ public class JDBCConnectionExample {
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/wplab","root","1234");
 			Statement st = con.createStatement();
 			System.out.println("connection established");
-			int x = st.executeUpdate("insert into author(id,name) values(1,'Hema')");
+			int x = st.executeUpdate("insert into author(id,name) values(1,'Anusha')");
 					System.out.println(x+" record is inserted");
 			ResultSet rs= st.executeQuery("select * from author");
 			while(rs.next()){
