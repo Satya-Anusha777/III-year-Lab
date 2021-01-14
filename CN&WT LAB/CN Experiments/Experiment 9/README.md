@@ -23,5 +23,5 @@ Step 8: Stop
 
 ### Output
 
-![output](Frame_Sorting.png)
+![output](frame_sorting.png)
 
