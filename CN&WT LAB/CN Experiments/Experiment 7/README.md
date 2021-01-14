@@ -25,4 +25,4 @@ Step 9: Stop
 
 ### Output
 
-![output](Encryption_Decryption.png)
+![output](encryption_decryption.png)
