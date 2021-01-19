@@ -19,7 +19,7 @@ Step 6: And now select Intense scan in profile section.
 
 Step 7: In Nmap output column we can see OS version,type of data transmitted.
 
-Step 6: Thats how Nmap scan runs.
+Step 8: Thats how Nmap scan runs.
 
 
 ### Output
