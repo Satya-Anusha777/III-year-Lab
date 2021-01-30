@@ -36,7 +36,9 @@ from the source vertex 0.
  recalculation of distance. i.e. for each vertex v
 
   if(visited[v]==0)
+  
   distance[v]=min(distance[v],
+  
   distance[w]+cost[w][v])
 
 ### Output
