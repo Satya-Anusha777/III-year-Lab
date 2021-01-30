@@ -16,6 +16,7 @@ Distance vector is Distributed iterative asynchronous simple routing protocol.
   - It discovers that a link to a neighbor has gone down.
 
 4.From time-to-time, each node sends its own distance vector estimate to neighbors.
+
 5.When a node x receives new DV estimate from any neighbor v, it saves v’s distance vector and it updates its own DV using B-F equation:
 
  Formula for calculation:  Dx(y) = min { C(x,v) + Dv(y), Dx(y) } for each node y ∈ N
