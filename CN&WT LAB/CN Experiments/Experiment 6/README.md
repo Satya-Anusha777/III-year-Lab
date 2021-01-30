@@ -11,9 +11,9 @@ Distance vector is Distributed iterative asynchronous simple routing protocol.
 
 1.A router transmits its distance vector to each of its neighbors in a routing packet.
 
-2. Each router receives and saves the most recently received distance vector from each of its neighbors.
+2.Each router receives and saves the most recently received distance vector from each of its neighbors.
 
-3. A router recalculates its distance vector when:
+3.A router recalculates its distance vector when:
   - It receives a distance vector from a neighbor containing different information than before.
   - It discovers that a link to a neighbor has gone down.
 
