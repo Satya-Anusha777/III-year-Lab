@@ -27,7 +27,7 @@ from the source vertex 0.
  distance[i]=cost[0][i];
  Initially, distance of source vertex is taken as 0. i.e. distance[0]=0;
  
-5. for(i=1;i<n;i++)
+5.for(i=1;i<n;i++)
  – Choose a vertex w, such that distance[w] is minimum and visited[w] is 0.
    Mark visited[w] as 1.
  – Recalculate the shortest distance of remaining vertices from the source.
