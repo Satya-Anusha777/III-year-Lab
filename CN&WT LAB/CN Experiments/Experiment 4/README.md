@@ -1,30 +1,46 @@
 # Experimet 4
 
 ## Aim of the Experiment
-Write a C program to implement distance vector routing algorithm for obtaining routing tables at each node.
+Write a C program to implement Dijsktra’s algorithm to compute the shortest path through a network.
 
 ### Steps or Procedure of experiment
 
-Distance vector is Distributed iterative asynchronous simple routing protocol.
+Dijsktra’s algorithm for finding the shortest path from a starting node to a target node in a weighted graph.
 
 ### Algorithm
 
-1.A router transmits its distance vector to each of its neighbors in a routing packet.
+1.Create cost matrix C[ ][ ] from adjacency matrix adj[ ][ ]. C[i][j] is the cost of going
+from vertex i to vertex j. If there is no edge between vertices i and j then C[i][j] is
+infinity.
 
-2.Each router receives and saves the most recently received distance vector from each of its neighbors.
+2.Array visited[ ] is initialized to zero.
 
-3.A router recalculates its distance vector when:
-  - It receives a distance vector from a neighbor containing different information than before.
-  - It discovers that a link to a neighbor has gone down.
+ for(i=0;i<n;i++)
+ visited[i]=0;
+ 
+3.If the vertex 0 is the source vertex then visited[0] is marked as 1.
 
-4.From time-to-time, each node sends its own distance vector estimate to neighbors.
+4.Create the distance matrix, by storing the cost of vertices from vertex no. 0 to n-1
+from the source vertex 0.
 
-5.When a node x receives new DV estimate from any neighbor v, it saves v’s distance vector and it updates its own DV using B-F equation.
+ for (i=1; i<n;i++)
+ distance[i]=cost[0][i];
+ Initially, distance of source vertex is taken as 0. i.e. distance[0]=0;
+ 
+5. for(i=1;i<n;i++)
+ – Choose a vertex w, such that distance[w] is minimum and visited[w] is 0.
+   Mark visited[w] as 1.
+ – Recalculate the shortest distance of remaining vertices from the source.
 
- Formula for calculation:  Dx(y) = min { C(x,v) + Dv(y), Dx(y) } for each node y ∈ N
+ – Only, the vertices not marked as 1 in array visited[ ] should be considered for
+ recalculation of distance. i.e. for each vertex v
+
+  if(visited[v]==0)
+  distance[v]=min(distance[v],
+  distance[w]+cost[w][v])
 
 ### Output
  
  
-![output](distance_vector.png)
+![output](dijkstra.png)
 
