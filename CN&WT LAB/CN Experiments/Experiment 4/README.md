@@ -16,6 +16,7 @@ infinity.
 2.Array visited[ ] is initialized to zero.
 
  for(i=0;i<n;i++)
+ 
  visited[i]=0;
  
 3.If the vertex 0 is the source vertex then visited[0] is marked as 1.
