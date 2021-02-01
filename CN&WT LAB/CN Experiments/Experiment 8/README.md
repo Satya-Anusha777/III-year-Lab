@@ -10,7 +10,9 @@ The algorithm works similarly to the way an actual leaky bucket holds water: The
 ### Steps 
 
 1.Initialize a counter to n at the tick of the clock.
+
 2.If n is greater than the size of the packet, send the packet and decrement the counter by the packet size. Repeat this step until n is smaller than the packet size.
+
 3.Reset the counter and go to step 1.
 
 
