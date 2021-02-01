@@ -22,7 +22,21 @@ in Wireshark.
 
 ### Output
 
-#### Starting Wire shark
+#### Starting Wire shark and viewing captured Traffic
 
-![output](.png)
+![output](wireshark.png)
+
+#### Analysis and statistics
+
+##### Captured file statistics
+
+![output](capture_filestats.png)
+
+##### Packet Lengths
+
+![output](packetlength.png)
+
+##### I/O graphs
+
+![output](iographs.png)
 
