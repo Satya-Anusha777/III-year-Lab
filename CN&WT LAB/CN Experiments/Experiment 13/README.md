@@ -1,1 +1,2 @@
 
+Do the following using NS2 Simulatori.NS2 Simulator-Introduction ii.Simulate to Find the Number of Packets Droppediii.Simulate to Find the Number of Packets Dropped by TCP/UDPiv.Simulate to Find the Number of Packets Dropped due to Congestion v.Simulate to Compare Data Rate& Throughput. vi.Simulate to Plot Congestion for Different Source/Destinationvii.Simulate to Determine the Performance with respect to Transmission of Packets
